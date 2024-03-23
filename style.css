@@ -85,9 +85,11 @@ body::before {
     justify-content: space-between;
     cursor: pointer;
     gap: 1rem;
+    background: none;
+    border: none;
 }
 
-.flex-group .h2 {
+.h2 {
     font-weight: var(--fw-bold);
 }
 
@@ -120,8 +122,41 @@ body::before {
 .block.active .minus {
     display: block;
 }
+  
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 1rem;
+    background: none;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+details .plus {
+    display: block;
+  }
+  
+  details .minus {
+    display: none;
+  }
+  
+  details[open] .plus {
+    display: none;
+  }
+  
+  details[open] .minus {
+    display: block;
+  }
+
+  details[open] .answer{
+    height: auto;
+  }
+  
 
 @media screen and (max-width: 767px) {
+
     body::before {
       background-image: url('assets/images/background-pattern-mobile.svg');
     }
