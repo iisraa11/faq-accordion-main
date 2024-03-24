@@ -24,8 +24,12 @@ img, svg {
     max-width: 100%;
 }
 
+h1, h2, h3, h4 {
+    text-wrap: balance;
+}
+
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: var(--light-pink);
     font-family: var(--ff-normal);
 }
@@ -84,13 +88,14 @@ body::before {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    gap: 1rem;
+    gap: 1.25rem;
     background: none;
     border: none;
 }
 
 .h2 {
     font-weight: var(--fw-bold);
+    text-align: left;
 }
 
 .flex-group .h2:hover,
